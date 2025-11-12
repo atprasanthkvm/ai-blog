@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import BlogGenerator from './BlogGenerator';
+import './App.css'; // Keep this if you have any global styles, or remove it if you only use index.css
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // min-h-screen and bg-gray-50 are Tailwind classes for basic page structure
+    <div className="min-h-screen bg-gray-50"> 
+      <BlogGenerator />
     </div>
   );
 }
